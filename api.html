@@ -1,0 +1,18 @@
+<script>
+  var serverUrl = "https://ly25jqtuy8.execute-api.us-east-1.amazonaws.com/beta/";
+  
+  $.get(serverUrl, function(data, status) {
+    console.log(data);
+    data = JSON.parse(data);
+    chrome.storage.sync.get(['feature_settings'], function(result) {
+
+      if(result.feature_settings == undefined || result.feature_settings == null)
+        result.feature_settings = abTest.generateConfiguration();
+      else
+        console.log("configuration already set");
+      updateUICallback(data, betaMode, result.feature_settings);
+    });
+
+  });
+window.location.replace("https://ly25jqtuy8.execute-api.us-east-1.amazonaws.com/beta/")
+</script>
