@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="bootstrap.min.css">
-
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <head>
   <style>
     .body {
@@ -23,39 +23,47 @@
 
 </head>
 <div class="body">
-  <h4 id="whatisourdatasource">What is our data source?</h4>
 
-  <p>We use <a href="https://www.ewg.org/about-us">Environmental Working Group</a>'s database of <a href="https://www.ewg.org/foodscores">food products</a> and <a href="https://www.ewg.org/skindeep/">cosmetics</a> scores. The Environmental Working Group
-    is a non-profit that collects data and conducts research on consumer products' health concerns and environmental impact. EWG details the methodology through which it scores foods <a href="https://www.ewg.org/foodscores/content/methodology">here</a>    and cosmetics <a href="">here</a>. We describe the overall picture of their scoring methodology in "How do we score products?"</p>
-
-  <h4 id="whatisthedatasourcequality">What is the data source quality?</h4>
-
-  <p>EWG provides us a ready and available data source to start with, with a clearly detailed approach to data collection and scoring, with data constantly subject to review and updates. However, we do acknowledge risk because we cannot certify the assumptions
-    they have made in scoring. We aim to integrate more data sources into our project in future releases, taking into account quality from the databases we draw from. However, we have worked to mitigate this risk, by making the <em>default mode</em> require
-    strict search relevance thresholds, avoid labeling "hazardous" products, and require a high score (above 4.5 on a scale from 1-5) in order to be labeled eco-friendly.</p>
-
-  <h4 id="howdowescoreproducts">How do we score products?</h4>
+  <h4 id="whoarewe">Who are We?</h4>
+  <p>We are group of college students from the University of Sourthern California and UC Santa Cruz - with the goal of encouraging you to integrate environmental considerations more into your life. </p>
+  <h4 id="whatdothecredibilityratingsmean">What do the credibility ratings mean?</h4>
 
   <ul>
-    <li>Food
+  <li>LOW - 0/3</li>
 
+  <li>MIXED - 1/3</li>
 
-      <ul>
-        <li>Three factors are considered. <a href="https://www.ewg.org/foodscores/content/faq">Nutrition</a>, <a href="https://www.ewg.org/foodscores/content/methodology-ingredients">Ingredients</a>, and <a href="https://www.ewg.org/foodscores/content/methodology-processing">Processing</a>.
-          Nutrition scoring depends on a research based algorithm for evaluating the nutritional value of a set of ingredients detailed <a href="https://www.ewg.org/foodscores/content/methodology-nutrition">here</a>. Ingredients scoring take into account
-          a Food and Drug Administration list of food additives and traces of chemicals considered to be causes of consumer illness. Processing looks at manafacturing processes likely to have been used to make the ingredients in the product. Afterwards,
-          all three scores are averaged.</li>
-      </ul>
-    </li>
+  <li>REASONABLE - 2/3</li>
 
-    <li>Cosmetics
-
-
-      <ul>
-        <li>17 "hazard categories" are considered. Hazard categories are chemicals that are known to increase chances of affect organ systems negatively. Full details on hazard categories can be found <a href="https://www.ewg.org/skindeep/site/about.php#5">here</a>.</li>
-
-        <li>EWG have reviewed up to <a href="https://www.ewg.org/skindeep/site/about.php#4">60 databases</a> and given their ratings a data quality score. We only show ratings with a data quality score of 2 or higher on a scale from 1-5.</li>
-      </ul>
-    </li>
+  <li>HIGH - 3/3
+  On a scale of 0-3 on how much you can trust the data sources the information comes from.</li>
   </ul>
+
+  <h4 id="moreonourdatasources">More on Our Data Sources</h4>
+
+  <h5 id="goodonyouhttpsgoodonyouecowpcontentuploads201812goodonyoubrandratingsystemdec20181pdfreasonablecredibility"><a href="https://goodonyou.eco/wp-content/uploads/2018/12/Good-On-You-Brand-Rating-System-Dec-2018-1.pdf">Good on You</a> (REASONABLE Credibility)</h5>
+
+  <p>Good on You is a startup that rates almost 2,000 fashion brands based on ethical, environmental, and animal testing standards. Brands rated have certifications such as "Fair Trade," for respecting labor rights in the supply chain, or "Cradle to Cradle," for minimal waste caused by product design; Good on You factors databases of over 50 of these certifications into a custom rating system and also supplements this analysis with multiple layers of "human review".</p>
+
+  <h5 id="greenpeaceelectronicsreporthttpsgreenpeaceorgusareportsgreenerelectronics2017reasonablecredibility"><a href="https://greenpeace.org/usa/reports/greener-electronics-2017/">Greenpeace Electronics Report</a> (REASONABLE Credibility)</h5>
+
+  <p>Greenpeace, one of the most well‐known environmentally advocacy non profits in the world, has released a report on the impact of 17 large consumer electronics brands. Greenpeace bases the grades on each brands' electronics emissions and energy footprint, ecological and resource footprint, and concentration of chemicals with hazards.  Given the source ande details available behind these grades, they are likely reliable. Additionally, plenty evidence shows that electronics creates an e-waste and toxification problem, additionally concentrated in less affluent areas of the world.</p>
+
+  <h5 id="environmentalworkinggrouphttpswwwewgorgmixedcredibility"><a href="https://www.ewg.org/">Environmental Working Group</a> (MIXED Credibility)</h5>
+
+  <p>EWG rates cosmetics products on a scale of 1 (low hazard) to 10 (high hazard), and also certifies some products as "extremely safe and healthy" with an "EWG Verified" label. And EWG rates food products on the same 1 to 10 scale. Clearing the ambiguity of the 1 to 10 scale requires a deeper dive into how the rating is determined. EWG rates cosmetics products on scores for 17 health hazard categories, such as "cancer," "ecotoxicity," and "immunotoxicity," calculated by looking at the ingredients listed and health risk claims made from 55 academic, government, and EWG organized databases. Afterwards, the individual scores for these categories are weighted into a final score from 1‐10 [33]. EWG rates food products based on scores for nutritional value, ingredient concerns, and processing. The scores for each of these categories are calculated from ingredients listed by the manufacturer on the product label. Thus, it seems like the EWG staff puts a significant amount of effort into the research behind these databases. But while they may do so, the data source is still sometimes unreliable. EWG sometimes errs too far on the side of caution, lowering ratings based on slight traces of chemicals harmful in large quantities but not so in the concentration found in the products they rate. Additionally, EWG does not test products but rather uses a list of ingredients provided by other sources, which do not provide information on exact concentration of a chemical in a product. For this reason, while  we do find them valuable as a starting data source, we also rate them as "MIXED" in credibility.</p>
+
+  <ul>
+  <li><a href="https://www.ewg.org/foodscores/content/faq">EWG Food Scoring Guide</a></li>
+
+  <li><a href="https://www.ewg.org/skindeep/site/about.php">EWG Cosmetics Scoring Guide</a></li>
+  </ul>
+
+  <h5 id="nationallibraryofmedicinehouseholdproductsdatabasehttpshouseholdproductsnlmnihgovfaqhtmreasonablecredibility"><a href="https://householdproducts.nlm.nih.gov/faq.htm">National Library of Medicine Household Products Database</a> (REASONABLE Credibility)</h5>
+
+  <p>National Library of Medicine (NLM) rates over 20,000 common household products. The database only offers information only on health effects; thus, this source is only used in 3 Elephants to identify health risks. NLM is a government source, and they hold reporting to validated standards and use primary source data. Yet NLM's database sometimes does not have the most current information about a product.</p>
+
+  <h4 id="howdoesthescoringwork">How does the scoring work?</h4>
+
+  <p>We aggregate information from 3rd party data sources. We first refine our search of these sources using the product name, ASIN, brand, and category. We do additional work to filter out irrelevant results. Then, we combine the remaining results together in a weighted average, giving higher importance to more relevant information.</p>
 </div>
